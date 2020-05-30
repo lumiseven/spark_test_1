@@ -12,5 +12,7 @@ object Glom {
     glomRDD.foreach(array => {
       println(array.mkString(","))
     })
+
+    sc.stop()
   }
 }

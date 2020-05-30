@@ -11,5 +11,7 @@ object Map {
       .map(_+1)
       .map(_+"a")
       .foreach(println)
+
+    sc.stop()
   }
 }

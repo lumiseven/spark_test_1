@@ -10,5 +10,7 @@ object Cogroup {
     val rdd1 = sc.parallelize(Array((1,"a"),(2,"b"),(3,"c")))
     val rdd2 = sc.parallelize(Array((1,4),(2,5),(3,6)))
     rdd1.cogroup(rdd2).foreach(println)
+
+    sc.stop()
   }
 }

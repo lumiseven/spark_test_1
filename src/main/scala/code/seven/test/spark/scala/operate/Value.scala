@@ -43,5 +43,7 @@ object Value {
     rdd15.foreach(println)
     println
     rdd16.foreach(println)
+
+    sc.stop()
   }
 }

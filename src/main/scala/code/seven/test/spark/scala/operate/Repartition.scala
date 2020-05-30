@@ -17,5 +17,7 @@ object Repartition {
     glomRDD.foreach(array => {
       println(array.mkString(","))
     })
+
+    sc.stop()
   }
 }

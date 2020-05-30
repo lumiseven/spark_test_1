@@ -14,5 +14,7 @@ object MapPartitionWithIndex {
       array.map(i + "_" + _)
     })
     mapPRDD.foreach(println)
+
+    sc.stop()
   }
 }

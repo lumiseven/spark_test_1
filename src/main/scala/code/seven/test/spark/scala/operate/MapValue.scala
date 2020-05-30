@@ -9,5 +9,7 @@ object MapValue {
 
     val rdd = sc.parallelize(Array((3,"aa"),(6,"cc"),(2,"bb"),(1,"dd")))
     rdd.mapValues(v => v + "_test").collect.foreach(println)
+
+    sc.stop()
   }
 }

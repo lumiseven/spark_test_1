@@ -14,5 +14,7 @@ object ReadJson {
     val mapper = new ObjectMapper()
 //    mapper.registerModule(DefaultScalaModule)
     fileRDD.map(j => mapper.writeValueAsString(j)).foreach(println)
+
+    sc.stop()
   }
 }

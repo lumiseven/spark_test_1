@@ -14,5 +14,7 @@ object MapPartition {
       array.map(_ * 2)
     })
     mapPartitionRDD.foreach(println)
+
+    sc.stop()
   }
 }

@@ -10,5 +10,7 @@ object SortByKey {
     val rdd2 = sc.makeRDD(Array(("a", 2), ("z", 0), ("c", 1), ("b", -1)))
     rdd2.sortByKey(true).collect.foreach(println)
     rdd2.sortByKey(false).collect.foreach(println)
+
+    sc.stop()
   }
 }

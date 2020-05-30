@@ -14,5 +14,7 @@ object SortBy {
 
     val rdd2 = sc.makeRDD(Array(("a", 2), ("c", 1), ("b", -1)))
     rdd2.sortBy(x => x._2).collect.foreach(println)
+
+    sc.stop()
   }
 }
